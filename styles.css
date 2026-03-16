@@ -1,0 +1,36 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cadetblue;
+  color: white;
+}
+
+
+
+.header {
+  height: 300px; /* Or your desired height */
+  background-image: url('./assets/san-diego.jpg'); /* Name of your saved image */
+  background-size: cover; /* This makes the image scale to fill the banner area */
+  background-position: center; /* Keeps the skyline centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Make your H1 stand out */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Good for text over busy backgrounds */
+}
