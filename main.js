@@ -6,6 +6,18 @@ $(document).ready(function () {
         console.error("Location denied", error);
         loadData(); // Still load data even if they say no
     });
+
+    $('#theme-toggle').click(function() {
+    const body = $('body');
+    if (body.attr('data-theme') === 'dark') {
+        body.removeAttr('data-theme');
+        $(this).text('🌙 Toggle Dark Mode');
+    } else {
+        body.attr('data-theme', 'dark');
+        $(this).text('☀️ Toggle Light Mode');
+    }
+});
+
 });
 
 function loadData(userLat, userLon) {
