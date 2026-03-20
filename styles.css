@@ -126,6 +126,26 @@ select:focus {
 #top-spots-table th:nth-child(2) { width: 50%; }
 #top-spots-table th:nth-child(3) { width: 15%; }
 #top-spots-table th:nth-child(4) { width: 15%; }
+/* 1. Make the headers stay at the top */
+thead th {
+  position: sticky;
+  top: 0;                /* Sticks to the very top of the scroll container */
+  z-index: 100;          /* Ensures headers stay ABOVE the scrolling rows */
+  background-color: var(--bg-color); /* Matches background so rows "disappear" behind it */
+  padding-top: 20px;     /* Adds some breathing room at the top */
+  padding-bottom: 20px;
+}
+
+
+thead th::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 2px solid var(--header-bg);
+  opacity: 0.9;
+}
 
 th {
   padding: 15px;
