@@ -6,34 +6,36 @@
   <!--Metadata-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="CCCareers, web102, astro-weight-calculator, NASA">
-  <meta name="description" content="Creating Coding Careers Web 102 Astro Weight Calculator Project">
+  <meta name="keywords" content="CCCareers, web102, san-diego-top-spots, San Diego">
+  <meta name="description" content="Creating Coding Careers Web 102 San Diego Top Spots Project">
   <meta name="robots" content="noindex,nofollow">
   <!--External File Links-->
   <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Write your markup here -->
+     
     <section class="header">
-        <h1>San Diego Top Spots</h1>
-        
+        <h1>San Diego Top Spots</h1>    
     </section>
+
     <section class="filter-section">
-    <label for="category-filter">I'm looking for:</label>
-    <select id="category-filter">
-        <option value="all">All Spots</option>
-        <option value="food">Food & Drink</option>
-        <option value="entertainment">Entertainment</option>
-        <option value="museum">Museums</option>
-        <option value="nature">Nature & Parks</option>
-        <option value="shopping">Shopping</option>
-    </select>
-    <button id="theme-toggle" >🌙</button>
-</section>
+        <label for="category-filter">I'm looking for:</label>
+            <select id="category-filter">
+                <option value="all">All Spots</option>
+                <option value="food">Food & Drink</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="museum">Museums</option>
+                <option value="nature">Nature & Parks</option>
+                <option value="shopping">Shopping</option>
+            </select>
+        <button id="theme-toggle" >🌙</button>
+    </section>
+
     <section>
      <table id="top-spots-table">
-        
         <thead>
             <tr>
                 <th>Name</th>
@@ -42,11 +44,11 @@
                 <th>Link</th>
             </tr>
         </thead>
-        
         <tbody>
         </tbody>
      </table>
      </section>
+
     <!-- Don't forget to add your <script> tag here -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>

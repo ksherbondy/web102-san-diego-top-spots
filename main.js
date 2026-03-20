@@ -66,7 +66,8 @@ function filterAndDisplay(category) {
     // Build the rows
     filteredData.forEach(function(spot) {
         // Updated Map URL (Using the standard Search format)
-        const mapURL = `https://www.google.com/maps/search/?api=1&query=${spot.location[0]},${spot.location[1]}`;
+        //const mapURL = `https://www.google.com/maps/search/?api=1&query=${spot.location[0]},${spot.location[1]}`;
+        const mapURL = `https://www.google.com/maps?q=${spot.location[0]},${spot.location[1]}`;
         
         
         const distanceText = (spot.distance == 9999) ? "N/A" : `${spot.distance} mi`;

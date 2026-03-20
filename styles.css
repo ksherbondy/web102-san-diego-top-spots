@@ -196,3 +196,32 @@ tr td:last-child { border-radius: 0 12px 12px 0; }
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+@media (max-width: 768px) {
+  #top-spots-table, thead, tbody, th, td, tr {
+    display: block; /* Turns the table into a vertical list of cards */
+  }
+  
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  tbody tr {
+    margin-bottom: 20px;
+    border: 1px solid var(--table-border);
+    border-radius: 12px !important;
+  }
+  
+  td {
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .view-btn {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
