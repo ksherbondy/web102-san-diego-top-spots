@@ -17,9 +17,21 @@
     <!-- Write your markup here -->
     <section class="header">
         <h1>San Diego Top Spots</h1>
-        <button id="theme-toggle" style="position: absolute; top: 20px; right: 20px;">🌙 Toggle Dark Mode</button>
-</section>
+        
     </section>
+    <section class="filter-section">
+    <label for="category-filter">I'm looking for:</label>
+    <select id="category-filter">
+        <option value="all">All Spots</option>
+        <option value="food">Food & Drink</option>
+        <option value="entertainment">Entertainment</option>
+        <option value="museum">Museums</option>
+        <option value="nature">Nature & Parks</option>
+        <option value="shopping">Shopping</option>
+    </select>
+    <button id="theme-toggle" >🌙</button>
+</section>
+    <section>
      <table id="top-spots-table">
         
         <thead>
@@ -34,7 +46,7 @@
         <tbody>
         </tbody>
      </table>
-
+     </section>
     <!-- Don't forget to add your <script> tag here -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
