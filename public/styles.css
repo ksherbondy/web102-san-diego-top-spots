@@ -42,7 +42,7 @@ body {
 /* 1. The Banner - More height and a modern gradient */
 .header {
   height: 400px; /* Taller banner feels more premium */
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('./assets/san-diego.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('/assets/san-diego.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -176,7 +176,7 @@ tbody tr:hover {
 td {
   padding: 20px;
   border: none; /* Removes the 90s grid lines */
-  word-wrap: break-word;
+  overflow-wrap:break-word;
   vertical-align: middle;
 }
 
